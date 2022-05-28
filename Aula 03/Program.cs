@@ -6,7 +6,32 @@ namespace Aula_03
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("1 - Operadores de Comparação");
+            Console.WriteLine("2 - Quais são as horas do dia? ");
+
+            int escolher = Convert.ToInt32(Console.ReadLine());
+
+
+            switch (escolher)
+            {
+                case 1:
+                    Console.WriteLine("A- ==");
+                    Console.WriteLine("B- !=");
+                    Console.WriteLine("C- >");
+                    Console.WriteLine("D- <");
+                    Console.WriteLine("E- >=");
+                    Console.WriteLine("F- <=");
+                    String escolherOpe = Console.ReadLine();
+
+                    break;
+
+
+   
+                default:
+                    Console.WriteLine("Não existe números");
+                    break;
+            }
+
             // While Loop
             int i = 0;
             while (i < 5)
@@ -39,9 +64,9 @@ namespace Aula_03
 
             // foreach loop
             string[] cars = { "Vermelho", "Preto", "Cinza", "Branco" };
-            foreach (string i in cars)
+            foreach (string c in cars)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(c);
             }
         }
     }
